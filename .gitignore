@@ -1,0 +1,32 @@
+# Logs
+logs/
+*.log
+
+# Dependency directories
+node_modules/
+.venv/
+.cache/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# IDE Files
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Environment files
+.env
+
+# Build artifacts
+dist/
+build/
+*.bundle.js
+
+# Package-lock files
+package-lock.json
+yarn.lock
