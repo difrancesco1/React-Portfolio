@@ -3,11 +3,28 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import NavBar from './components/nav';
+import Hero from './components/hero';
+import CardReg from './components/card-rg';
+import CardRegStack from './components/card-rg-stack';
+import CardLong from './components/card-long';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <body>
+      <main className='main'>
+        <NavBar></NavBar>
+        <Hero></Hero>
+        <div className='card-holder'>
+          <CardReg></CardReg><CardRegStack></CardRegStack><CardLong></CardLong>
+        </div>
+        
+      </main>
+    </body>
+    
   </React.StrictMode>
 );
 
