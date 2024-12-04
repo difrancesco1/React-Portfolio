@@ -8,6 +8,8 @@ import Hero from './components/hero';
 import CardReg from './components/card-rg';
 import CardRegStack from './components/card-rg-stack';
 import CardLong from './components/card-long';
+import CardWide from './components/card-wide';
+
 
 
 
@@ -19,7 +21,7 @@ root.render(
         <NavBar></NavBar>
         <Hero></Hero>
         <div className='card-holder'>
-          <CardReg></CardReg><CardRegStack></CardRegStack><CardLong></CardLong>
+          <CardReg></CardReg><CardRegStack></CardRegStack><CardLong></CardLong><CardWide></CardWide>
         </div>
         
       </main>
