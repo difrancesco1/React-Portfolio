@@ -1,13 +1,13 @@
-import React from 'react'
-import DecayTracker from "../../images/DecayTracker.gif"
+// ProjectMedia.js
+import React from 'react';
 import '../../App.css';
 
-const ProjectMedia = () => {
+const ProjectMedia = ({ media }) => {
   return (
-    <div className='project-gif-container'>
-        <img className='project-gif' src={DecayTracker} alt="DecayTrackerGif"/>
+    <div className="project-gif-container">
+      <img className="project-gif" src={media.src} alt={media.alt} />
     </div>
-  )
-}
+  );
+};
 
-export default ProjectMedia
+export default ProjectMedia;

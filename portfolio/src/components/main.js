@@ -1,12 +1,8 @@
-import '../App.css';
 import React from 'react';
+import '../App.css';
 
-function Main() {
-    return(
-        <main className='main'>
-            
-        </main>
-    );
-}
+const Main = ({ children, className }) => {
+  return <div className={className}>{children}</div>;
+};
 
 export default Main;
