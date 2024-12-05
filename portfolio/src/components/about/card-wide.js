@@ -1,6 +1,6 @@
 import React from "react";
-import '../App.css';
-import grid from '../images/grid3.png';
+import '../../App.css';
+import grid from '../../images/grid3.png';
 
 
 function WideCard() {

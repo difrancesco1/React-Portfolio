@@ -1,11 +1,21 @@
 import React from "react";
-import '../App.css';
-import grid from '../images/grid1.png';
+import '../../App.css';
+import grid from '../../images/grid1.png';
+import AboutCardDetails from "./AboutCardDetails";
 
 function CardReg() {
     return (
         <div className="card-cont-rg">
-            <div className="card-rg">
+            <AboutCardDetails 
+                cardType = "card-rg"
+                imageStyle = "card-prof-img"
+                imagePath = {grid}
+                cardTextContainer = "card-rg-text-cont"
+                cardHeaderText = "card-rg-header-text"
+                cardParagraphText = "card-rg-subtext"
+
+            />
+            {/* <div className="card-rg">
                 <img src={grid} className="card-prof-img"></img>
                 <div className="card-rg-text-cont">
                     <p className="card-rg-header-text">
@@ -16,8 +26,7 @@ function CardReg() {
                         I like building clean, user-friendly and responsive websites.
                     </p>
                 </div>
-            </div>
-
+            </div> */}
         </div>
     );
 };

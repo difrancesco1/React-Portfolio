@@ -1,6 +1,6 @@
 import React from "react";
-import '../App.css';
-import grid from '../images/globe.png';
+import '../../App.css';
+import grid from '../../images/globe.png';
 
 function CardLong() {
     return (
