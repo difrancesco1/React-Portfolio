@@ -1,4 +1,5 @@
 import React from "react";
+import '../../App.css';
 
 const referencesData = [
   {
@@ -40,9 +41,9 @@ const referencesData = [
 
 const References = () => {
   return (
-    <div style={styles.card}>
+    <div className="ref-card" style={styles.card}>
       <h2 style={styles.title}>References</h2>
-      <ul style={styles.list}>
+      <ul className="list-refs" style={styles.list}>
         {referencesData.map((reference, index) => (
           <li
             key={index}

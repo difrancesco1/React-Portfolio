@@ -26,7 +26,7 @@ const InvestCloudExperience = () => {
   };
 
   return (
-    <div style={styles.card}>
+    <div className="work-exp-card" style={styles.card}>
       <div style={styles.imageContainer}>
         <img
           src={spotlightImage}

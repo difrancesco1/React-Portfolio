@@ -1,11 +1,12 @@
 import React from "react";
 import InvestCloudExperience from "./ExperienceCard";
 import References from "./References";
+import '../../App.css';
 
 const WorkContainer = () => {
   return (
     <div style={styles.container}>
-      <div style={styles.cardContainer}>
+      <div className="work-experience-cont" style={styles.cardContainer}>
         <InvestCloudExperience />
         <References />
       </div>
@@ -16,15 +17,15 @@ const WorkContainer = () => {
 const styles = {
   container: {
     display: "flex",
-    justifyContent: "center", // Center the card container horizontally
+    justifyContent: "center",
     padding: "20px",
-    width: "100%", // Ensure container spans the parent width
+    width: "100%",
   },
   cardContainer: {
-    display: "flex", // Horizontal layout for cards
-    gap: "1.25rem", // Gap between ExperienceCard and References
-    alignItems: "flex-start", // Align items at the top
-    flexWrap: "nowrap", // Prevent wrapping, ensuring full width of children
+    display: "flex", 
+    gap: "1.25rem", 
+    alignItems: "flex-start", 
+    flexWrap: "nowrap", 
   },
 };
 

@@ -13,12 +13,12 @@ const Contact = () => {
 
           <label className='contact-full-name'>
             <span className='field-label'>Full Name</span>
-            <input className='field-input' type='text' name='name' required='' placeholder='John Doe' value={""}></input>
+            <input className='field-input' name='name' rows="5" required='' placeholder='John Doe'></input>
           </label>
 
           <label className='contact-email'>
             <span className='field-label'>Email address</span>
-            <input className='field-input' type='email' name='email' required='' placeholder='ex., johndoe@gmail.com' value={""}></input>
+            <input className='field-input' rows="5" name='email' required='' placeholder='ex., johndoe@gmail.com'></input>
           </label>
 
           <label className='contact-message'>
