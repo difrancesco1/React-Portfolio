@@ -7,22 +7,21 @@ const InvestCloudExperience = () => {
     dates: "January 2020 - November 2023",
     jobDescription: `Elevating from Junior to Mid-level Frontend Developer, I developed and
       maintained SaaS trading products on the Product Team including a stock
-      trading portal, admin portal, and order log, using HTML, CSS, and JavaScript.
+      trading portal, admin portal, and order log.
       While on the ADA team, I collaborated with the QA team to enhance testing
       processes and contributed to ADA compliance initiatives.`,
     keyProjects: [
-      "Trading Platform V2: Improved performance and enhanced user experience.",
-      "Stock Trading Portal: Built responsive designs with seamless functionality.",
-      "Order Log System: Streamlined admin workflows for stock transactions.",
+      "Lead developer for Invest Clouds SaaS Trading Product",
+      "Collaborated with cross functional teams to upgrade API’s and components",
+      "Enhanced and redesigned components in Order Status & Trading Admin Portal using React & Angular",
     ],
     responsibilities: [
-      "Developed and tested HTML, CSS, JavaScript to meet accessibility and web browser standards for websites.",
-      "Designed CSS templates for use in all pages on the website working with flex, grid, positioning, text, border, margin, padding, and table.",
+      "Worked closely with QA investigating and fixing bugs for 30+ client portals",
+      "Collaborated with teams company wide to implement unit testing using Jest",
       "Worked on responsive development for ISOMORPHIC responsive websites that could be served to desktop, tablets, and mobile users.",
-      "Created Unit Testing using JavaScript for regressions for the UI after fixing issues which are reported by Testing Teams.",
-      "Used JIRA as the bug tracking system to track and maintain the history of bugs/issues on an everyday basis.",
+
     ],
-    techUsed: ["HTML", "CSS", "JavaScript", "React", "Git", "Agile Development"],
+    techUsed: ["JavaScript", "React", "Angular", "HTML", "CSS", "JQuery", "MaterialUI"],
   };
 
   return (
@@ -37,7 +36,7 @@ const InvestCloudExperience = () => {
       <h2 style={styles.title}>{experienceData.title}</h2>
       <p style={styles.dates}>{experienceData.dates}</p>
       <p style={styles.description}>{experienceData.jobDescription}</p>
-      <h3 style={styles.subtitle}>Key Projects:</h3>
+      <h3 style={styles.subtitle}>Blue Trading Team:</h3>
       <ul style={styles.list}>
         {experienceData.keyProjects.map((project, index) => (
           <li key={index} style={styles.listItem}>
@@ -45,7 +44,7 @@ const InvestCloudExperience = () => {
           </li>
         ))}
       </ul>
-      <h3 style={styles.subtitle}>Responsibilities:</h3>
+      <h3 style={styles.subtitle}>L2 Support Team:</h3>
       <ul style={styles.list}>
         {experienceData.responsibilities.map((responsibility, index) => (
           <li key={index} style={styles.listItem}>

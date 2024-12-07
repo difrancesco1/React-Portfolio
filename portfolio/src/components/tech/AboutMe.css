@@ -1,0 +1,187 @@
+* {
+    margin:0;
+    scroll-behavior: smooth;
+  }
+  
+  button, [role="button"] {
+    cursor: pointer;
+  }
+
+/*About Container*/
+
+.about-section {
+    min-height: 100vh;
+    -moz-box-pack: center;
+    place-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: unset;
+}
+
+/*About Me Text Container*/
+
+.about-me-text-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex !important;
+    flex-direction: column;
+    -moz-box-align: center;
+    align-items: center;
+    align-self: center;
+    box-sizing: unset !important;
+    max-width: 1000px !important;
+    visibility: visible;
+
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: var(--animate-duration);
+    animation-duration: var(--animate-duration);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.about-me-header {
+    margin: 0px;
+    font-family: "Jost", sans-serif;
+    line-height: 1.5;
+    font-weight: bold !important;
+    color: #fff;
+    font-size: clamp(32px, 4vw, 56px) !important;
+    text-align: -moz-center;
+    animation: 1s fadeInUp;
+    box-sizing: unset;
+}
+
+.about-me-divider {
+    height: 0.4rem;
+    width: 2rem;
+    border-radius: 2rem;
+    margin: 1rem;
+    background: rgb(83, 115, 154);
+}
+
+.about-me-paragraph {
+    margin: 0px;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #b9b9b9 !important;
+    font-size: clamp(20px, 2vw, 26px) !important;
+    text-align: center;
+    animation: 1s fadeInUp;
+}
+
+/*Tech Carousel*/
+
+.tech-carousel-holder {
+    position: relative;
+    width: inherit;
+    animation: 1s fadeInUp;
+}
+
+.tech-carousel-holder::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: -4px;
+    display: block;
+    width: 100px;
+    height: 75px;
+    background: linear-gradient(270deg, rgb(91, 102, 138), rgba(95, 93, 93, 0)) 0% 0% / contain;
+    z-index: 1000;
+    transform: rotate(180deg); /* Rotate the pseudo-element */
+}
+
+.tech-carousel-holder::after {
+    content: "";
+    position: relative;
+    top: -71px;
+    left: 883px;
+    display: block;
+    width: 100px;
+    height: 75px;
+    background: linear-gradient(270deg, rgb(175, 183, 207), rgba(95, 93, 93, 0)) 0% 0% / contain;
+    z-index: 1000;
+  }
+
+.tech-carousel-inner {
+    display: flex;
+    margin-top: 3rem;
+    overflow: hidden;
+    width: 98%;
+    margin-left: 0.1rem;
+}
+
+
+/*Tech Card*/
+
+.tech-card {
+    animation: 22s linear infinite;
+    background: rgb(91, 192, 190);
+    margin-right: 3rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    min-width: 8rem;
+    text-align: center;
+}
+
+.tech-card-text {
+    margin: 0px;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.5rem !important;
+    color: rgb(255, 255, 255);
+}
+
+@keyframes moveLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-1600%);
+    }
+  }
+  
+  .tech-card {
+    animation: moveLeft 22s linear infinite;
+    background: rgb(91, 192, 190);
+    margin-right: 3rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    min-width: 8rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tech-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+
+  .tech-cards-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tech-card {
+    flex: 0 0 auto; /* Prevent the cards from shrinking */
+    background: rgb(91, 192, 190); /* Card background color */
+    margin-right: 3rem; /* Space between cards (can be adjusted) */
+    border-radius: 1rem; /* Rounded corners */
+    padding: 1rem; /* Space inside each card */
+    min-width: 8rem; /* Minimum width for cards */
+    text-align: center; /* Center the text inside the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for a modern look */
+    transition: transform 0.2s ease; /* Smooth hover effect */
+  }
+  
+  .tech-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }

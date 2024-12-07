@@ -1,0 +1,43 @@
+@keyframes wheel {
+    0% {
+      transform: translateY(0%) translateX(-50%) rotate(0deg); /* Start position */
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(400%) translateX(-50%) rotate(0deg); /* Complete rotation */
+      opacity: .2;
+    }
+  }
+  
+
+.divider-container {
+    margin-top: 2rem;
+    animation: 1s fadeInUp;
+    display: flex;
+    justify-content: center;
+}
+
+.divider-circle {
+    width: 1.5rem;
+    height: 3rem;
+    border-radius: 2rem;
+    position: relative;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    border: 3px solid rgb(254, 255, 255) !important;
+}
+
+.divider-circle::before {
+    content: "";
+    width: 0.3rem;
+    height: 0.3rem;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    opacity: 1;
+    background-color: rgb(254, 255, 255) !important;
+    animation: wheel 1.6s infinite linear; /* Correct animation syntax */
+  }
+  

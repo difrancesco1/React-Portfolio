@@ -7,8 +7,17 @@ button, [role="button"] {
   cursor: pointer;
 }
 
+:root {
+  --main-color: #404936;
+  --secondary-color: #C19C6F;
+  --light-color: #99744A;
+  --cold-main-color: #A5A5A5;
+  --cold-secondary-color: #21548B;
+  --cold-light-color: #EDEDED;
+}
+
 body {
-  background: #010103;
+  background: #171F22;
   font-family: General Sans,sans-serif;
   margin: 0;
   line-height: inherit;
@@ -26,11 +35,11 @@ body {
 }
 
 .header-nav {
-  background-color: #000000e6;
+  background-color: #666B64;
   z-index: 50;
-  top:0;
-  right:0;
-  left:0;
+  top: 0;
+  right: 0;
+  left: 0;
   position: fixed;
 }
 
@@ -68,7 +77,7 @@ body {
   transition-timing-function: cubic-bezier(.4,0,.2,1);
   transition-duration: .15s;
   --tw-text-opacity: 1;
-  color: rgb(163 163 163 / var(--tw-text-opacity));
+  color: #EDEDED;
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -125,6 +134,7 @@ ol, ul, menu {
   transition-property: color,background-color,border-color,text-decoration-color,fill,stroke;
   transition-timing-function: cubic-bezier(.4,0,.2,1);
   transition-duration: .15s;
+  color: #FEFEFE !important;
 }
 
 @media (min-width < 768px) {
@@ -283,6 +293,7 @@ ol, ul, menu {
   font-size: 1rem;
   color: #b9b9b9 !important;
   line-height: 1.3em !important;
+  font-size: 1.5rem !important;
 
 }
 
@@ -329,18 +340,19 @@ ol, ul, menu {
   cursor: pointer;
   outline: none;
   border: 2px solid transparent;
-  background-color: rgba(0, 0, 0, 0); /* Transparent background */
-  color: #0092ff; /* Initial text color */
+  background-color: rgba(0, 0, 0, 0);
+  color: #c1d1cf;
   box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
   border-radius: 0px;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth transition */
-  --color: #0092ff; /* Initial shadow color */
-  --hover: #005bb5; /* Hover color */
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --color: #c1d1cf;
+  --hover: #c1d1cf;
+  font-weight: 600;
 }
 
 .projects-btn:hover {
   background-color: var(--hover); /* Smoothly change background to hover color */
-  color: #fff; /* Text changes to white */
+  color: #171F22; /* Text changes to white */
   box-shadow: none; /* Remove shadow for unified look */
   border-color: var(--hover); /* Make border match the hover color */
 }
@@ -376,9 +388,9 @@ ol, ul, menu {
 }
 
 .resume-btn {
-  display: inline-flex; /* Flexbox for alignment */
-  align-items: center; /* Vertically center content */
-  justify-content: center; /* Horizontally center content */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 1em 1.5em;
   border: none;
   background-color: transparent;
@@ -388,10 +400,11 @@ ol, ul, menu {
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
-  color: #0092ff; /* Text color */
+  color: #c1d1cf;
   transition: background-color 0.3s ease, color 0.3s ease;
   line-height: 1.5;
   font-size: 14px;
+  font-weight: 550;
 }
 
 .hero-p {
@@ -403,8 +416,8 @@ ol, ul, menu {
 }
 
 .resume-btn:hover {
-  background-color: rgba(0, 146, 255, 0.1); /* Light blue background */
-  color: #005bb5; /* Slightly darker text color */
+  background-color: #c1d1cf; /* Light blue background */
+  color: #171F22; /* Slightly darker text color */
 }
 
 
@@ -641,7 +654,6 @@ ol, ul, menu {
   height: 100%;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  margin-top: 10rem;
   margin-bottom: -28rem;
 }
 
@@ -941,10 +953,21 @@ ol, ul, menu {
 }
 
 .my-work {
-  display: flex; /* Enables Flexbox layout */
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  flex-direction: column; /* Ensures vertical stacking of sections */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.my-divider {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   margin-top: 5rem;
@@ -966,6 +989,7 @@ ol, ul, menu {
   background-clip: text;
   color: transparent;
   margin: 0;
+  
 }
 
 .card-cont-work {
@@ -1107,7 +1131,7 @@ ol, ul, menu {
   align-items: center;
   z-index: 4;
   --tw-bg-opacity: 1;
-  background-color: rgb(14 14 16 / var(--tw-bg-opacity));
+  background-color: #485659;
   --tw-border-opacity: 1;
   border-color: white !important;
   border-width: 1px !important;
@@ -1252,6 +1276,15 @@ ol, ul, menu {
   --tw-gradient-to-position: 100%;
   background-clip: text;
   color: transparent;
+  margin: 0px;
+  font-family: "Jost", sans-serif;
+  line-height: 1.5;
+  font-weight: bold !important;
+  color: #fff;
+  font-size: clamp(32px, 4vw, 56px) !important;
+  text-align: -moz-center;
+  animation: 1s fadeInUp;
+  box-sizing: unset;
 }
 
 .p-text-contact {
@@ -1612,7 +1645,7 @@ ol, ul, menu {
     align-items: center;
     z-index: 4;
     --tw-bg-opacity: 1;
-    background-color: rgb(14 14 16 / var(--tw-bg-opacity));
+    background-color: #485659;
     --tw-border-opacity: 1;
     border-color: white !important;
     border-width: 1px !important;

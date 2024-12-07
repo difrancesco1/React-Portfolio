@@ -3,7 +3,7 @@ import './App.css';
 import NavBar from './components/nav';
 import Hero from './components/hero';
 import WorkCard from './components/my-work/card-work';
-import About from './components/about/About';
+import About from './components/about/About.js';
 import WorkMedia from './components/my-work/ProjectMedia';
 import Title from './components/Title';
 import Section from './components/Section';
@@ -15,22 +15,33 @@ import InvestCloudExperience from './components/WorkExperience/ExperienceCard.js
 import WorkContainter from './components/WorkExperience/WorkExperienceContaiener.js';
 import Contact from './components/Contact/Contact.js';
 import Footer from './components/footer/footer.js';
+import AboutMe from './components/tech/AboutMe.js';
+import Divider from './components/divider/Divider.js';
+
+import "animate.css";
 
 function App() {
     return (
         <Main className="main">
             <NavBar />
             <Hero />
-            <About />
+            <div className="my-divider">
+                <Divider />
+            </div>
+            <AboutMe />
+            {/* <About /> */}
+
+            
 
             <Section title="My Work" className="my-work">
+
                 <WorkCarousel />
             </Section>
 
             <Section title="My Experience" className="my-work">
                 <WorkContainter />
             </Section>
-            <Section className="my-work">
+            <Section title="Contact" className="my-work">
                 <Contact />
             </Section>
             <Footer />
