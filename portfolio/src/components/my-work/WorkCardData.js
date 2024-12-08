@@ -5,8 +5,8 @@ import tailwind from '../../images/tailwindcss.png';
 import axios from '../../images/axios.png';
 import framer from '../../images/framer.png';
 import DecayTracker from '../../images/DecayTracker3.gif';
-import NewProjectMedia from '../../images/DecayTracker3.gif'; // Add a new media file
-import arrowUp from '../../images/arrow-up.png'; // Import the arrow icon
+import NewProjectMedia from '../../images/tempmedia.png'
+import arrowUp from '../../images/arrow-up.png';
 import Krug from '../../images/Krug.png';
 import Python from '../../images/python.png';
 
@@ -29,15 +29,17 @@ const workCardsData = [
     ],
     liveSiteLink: "#", // Replace with the live site URL
     arrowIcon: arrowUp, // Use the imported arrow icon
-    media: { src: DecayTracker, alt: "Decay Tracker Project Media" },
+    media: [
+      { src: DecayTracker, alt: "Decay Tracker Project Media" }, // Specific to Decay Tracker
+    ],
   },
   {
     image: { src: spotlight, alt: "Spotlight Image" },
     logo: { src: Krug, alt: "Krug" },
     description: {
-      title: "KruGG - League of Legends Statstic Application",
+      title: "KruGG - League of Legends Statistic Application",
       paragraphs: [
-        "Comprehensive platform offering detailed statistics and insights for League of Legends. Players can access individual player statistics by searching for a summoner's Riot ID and Tagline",
+        "Comprehensive platform offering detailed statistics and insights for League of Legends. Players can access individual player statistics by searching for a summoner's Riot ID and Tagline.",
         "KruGG serves as a valuable resource for gamers seeking to analyze and improve their performance across multiple titles by offering in-depth data and user-friendly tools.",
         "Built with React and TailwindCSS for a responsive and elegant interface, powered by a Python backend and MongoDB database for robust functionality and scalability."
       ],
@@ -50,7 +52,9 @@ const workCardsData = [
     ],
     liveSiteLink: "#", // Replace with the live site URL
     arrowIcon: arrowUp, // Use the imported arrow icon
-    media: { src: DecayTracker, alt: "Decay Tracker Project Media" },
+    media: [
+      { src: NewProjectMedia, alt: "New KruGG Project Media" }, // Specific to KruGG
+    ],
   },
 ];
 

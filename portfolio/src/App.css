@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+
 * {
   margin:0;
   scroll-behavior: smooth;
@@ -70,6 +73,59 @@ body {
 .c-space {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.theme-li {
+  margin-right:-20px;
+}
+
+.nav-li-resume {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.resume-text {
+  border-radius: 8px !important;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.2rem;
+  background-color: rgb(208, 217, 193) !important;
+  color: #383F42;
+  transition: background-color 200ms ease-in-out !important;
+}
+
+.resume-text:hover {
+  border-radius: 8px !important;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.2rem;
+  background-color: rgb(134, 142, 119) !important;
+  color: #FFF;
+  transition: background-color 200ms ease-in-out !important;
+}
+
+.material-symbols-outlined:hover {
+  transition: transform 150ms ease-in-out !important;
+  transform: none;
+  color: rgb(190, 255, 230) !important;
+  transform: translateY(-4px);
+}
+
+.nav-li-text-p:hover {
+  color: rgb(190, 255, 230) !important;
+  transform: none;
+  transition: transform 150ms ease-in-out !important;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  transform: translateY(-4px);
+}
+
+.nav-li-text-p {
+  color: rgb(254, 255, 255) !important;
+  transform: none;
+  transition: transform 150ms ease-in-out !important;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.5rem;
 }
 
 .header-name {
@@ -993,16 +1049,14 @@ ol, ul, menu {
 }
 
 .card-cont-work {
-  grid-template-columns: repeat(2,minmax(0,1fr));
   gap: 1.25rem;
   width: 100%;
-  /* display: grid; */
   margin-top: 3rem;
+  display: flex;
+  justify-content: center;
 }
 
 .work-card-container {
-  width: 590px;
-  height: 605px;
   --tw-shadow-color: #0E0E10;
   --tw-shadow: var(--tw-shadow-colored);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -1012,6 +1066,7 @@ ol, ul, menu {
   display: flex;
   position: relative;
   padding: 1.5em;
+  min-height: 601px;
 }
 
 .work-card-img-cont {
@@ -1123,19 +1178,25 @@ ol, ul, menu {
 }
 
 .project-gif-container {
-  width: 590px;
-  height: 605px;
-  display: flex;
+  max-width: 473px;
+  max-height: 403px;
   justify-content: center;
   align-content: center;
   align-items: center;
   z-index: 4;
   --tw-bg-opacity: 1;
-  background-color: #485659;
   --tw-border-opacity: 1;
   border-color: white !important;
   border-width: 1px !important;
   border-radius: .5rem;
+  --tw-shadow-color: #0E0E10;
+  --tw-shadow: var(--tw-shadow-colored);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
+  gap: 1.25rem;
+  flex-direction: column;
+  display: flex;
+  position: relative;
   padding: 1.5em;
 }
 
@@ -1199,7 +1260,7 @@ ol, ul, menu {
   justify-content: center;
   align-items: center;
   margin-top: 20px; /* Space between the card and arrows */
-  gap: 20px; /* Space between the left and right arrows */
+  gap: 10px; /* Space between the left and right arrows */
 }
 
 .carousel-arrow {
@@ -1240,6 +1301,7 @@ ol, ul, menu {
   flex-direction: column;
   min-height: 100vh;
   position: relative;
+  width: 100%;
 }
 
 .contact-img {
@@ -1264,6 +1326,7 @@ ol, ul, menu {
 }
 
 .head-text {
+  margin-top: 100px;
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 600;
@@ -1624,8 +1687,6 @@ ol, ul, menu {
     flex-direction: column;
   }
   .work-card-container {
-    width: 390px;
-    height: 605px;
     --tw-shadow-color: #0E0E10;
     --tw-shadow: var(--tw-shadow-colored);
     --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -1637,15 +1698,14 @@ ol, ul, menu {
     padding: 1.5em;
   }
   .project-gif-container {
-    width: 390px;
-    height: 605px;
+    max-width: 473px;
+    max-height: 403px;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
     z-index: 4;
     --tw-bg-opacity: 1;
-    background-color: #485659;
     --tw-border-opacity: 1;
     border-color: white !important;
     border-width: 1px !important;
@@ -1662,6 +1722,24 @@ ol, ul, menu {
     justify-content: center;
     margin-bottom: 100px;
   }
+}
+
+.ref-card {
+  flex: 0 0 auto;
+  max-width: 400px;
+  background-color: unset !important;
+  height: auto;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0) !important;
+  border-image: none;
+  border-radius: 12px;
+  padding: 20px;
+  --tw-border-opacity: 1 !important;
+  --tw-shadow-color: #0E0E10 !important;
+  --tw-shadow: var(--tw-shadow-colored) !important;
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow) !important;
 }
 
 @media (width < 1100px) {
@@ -1699,6 +1777,26 @@ ol, ul, menu {
   }
 }
 
+.work-exp-card {
+  width: 793px;
+  height: 713px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0) !important;
+  border-image: none;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+  --tw-border-opacity: 1;
+  position: relative;
+  background-color: unset !important;
+  overflow: hidden;
+  --tw-shadow-color: #0E0E10 !important;
+  --tw-shadow: var(--tw-shadow-colored) !important;
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow) !important;
+}
+
 @media (width < 900px) {
 
   .work-exp-card {
@@ -1716,4 +1814,60 @@ ol, ul, menu {
     width:unset !important;
     height:unset !important;
   }
+}
+
+.theme-btn {
+  background-color: transparent;
+  border: transparent;
+  display: inline-flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  background-color: transparent;
+  outline: 0px;
+  border: 0px;
+  margin: 0px;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  text-transform: uppercase;
+  min-width: 64px;
+  border-radius: 4px;
+  padding: 10px 8px;
+  color: rgb(254, 255, 255) !important;
+  transform: none;
+  transition: transform 150ms ease-in-out !important;
+  cursor: pointer;
+}
+
+.moon-img {
+  user-select: none;
+  display: inline-block;
+  fill: currentcolor;
+  flex-shrink: 0;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 1.5rem;
+  color:white;
+}
+
+.spotlight-cont {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.spotlight-work {
+  object-fit: cover;
+  border-radius: .75rem;
+  width: 100%;
+  height: 24rem;
+  max-width: 100%;
 }

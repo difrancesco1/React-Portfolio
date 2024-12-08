@@ -28,7 +28,7 @@ function App() {
             <div className="my-divider">
                 <Divider />
             </div>
-            <AboutMe />
+            <AboutMe id="about-me" />
             {/* <About /> */}
 
             

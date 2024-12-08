@@ -10,12 +10,12 @@
 /*About Container*/
 
 .about-section {
-    min-height: 100vh;
     -moz-box-pack: center;
     place-content: center;
     display: flex;
     flex-wrap: wrap;
     box-sizing: unset;
+    margin-bottom: 200px;
 }
 
 /*About Me Text Container*/
@@ -93,9 +93,10 @@
     display: block;
     width: 100px;
     height: 75px;
-    background: linear-gradient(270deg, rgb(91, 102, 138), rgba(95, 93, 93, 0)) 0% 0% / contain;
+    background: linear-gradient(270deg, rgb(47, 47, 48), rgba(37, 37, 37, 0)) 0% 0% / contain;
     z-index: 1000;
-    transform: rotate(180deg); /* Rotate the pseudo-element */
+    transform: rotate(180deg);
+    opacity: 0.2;
 }
 
 .tech-carousel-holder::after {
@@ -106,8 +107,15 @@
     display: block;
     width: 100px;
     height: 75px;
-    background: linear-gradient(270deg, rgb(175, 183, 207), rgba(95, 93, 93, 0)) 0% 0% / contain;
+    background: linear-gradient(270deg, rgb(53, 53, 53), rgba(93, 94, 95, 0)) 0% 0% / contain;
     z-index: 1000;
+    opacity: 0.2;
+  }
+
+  @media (width < 884px) {
+    .tech-carousel-holder::after {
+        display:none !important;
+      }
   }
 
 .tech-carousel-inner {
