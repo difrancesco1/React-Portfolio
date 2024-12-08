@@ -48,6 +48,7 @@
 
 .about-me-header {
     margin: 0px;
+    margin-top: 0px;
     font-family: "Jost", sans-serif;
     line-height: 1.5;
     font-weight: bold !important;
@@ -56,6 +57,7 @@
     text-align: -moz-center;
     animation: 1s fadeInUp;
     box-sizing: unset;
+    margin-top: 60px;
 }
 
 .about-me-divider {

@@ -1045,6 +1045,7 @@ ol, ul, menu {
   background-clip: text;
   color: transparent;
   margin: 0;
+  margin-top:50px;
   
 }
 
@@ -1348,6 +1349,7 @@ ol, ul, menu {
   text-align: -moz-center;
   animation: 1s fadeInUp;
   box-sizing: unset;
+  margin-top:60px;
 }
 
 .p-text-contact {

@@ -17,6 +17,7 @@ import Contact from './components/Contact/Contact.js';
 import Footer from './components/footer/footer.js';
 import AboutMe from './components/tech/AboutMe.js';
 import Divider from './components/divider/Divider.js';
+// import Divider from './components/divider/Divider.js';
 
 import "animate.css";
 
@@ -28,22 +29,28 @@ function App() {
             <div className="my-divider">
                 <Divider />
             </div>
-            <AboutMe id="about-me" />
+            <div id="about-me">
+            <AboutMe />
+            </div>
             {/* <About /> */}
 
             
+            <div id="my-work">
+                <Section id="my-work" title="My Work" className="my-work">
 
-            <Section title="My Work" className="my-work">
-
-                <WorkCarousel />
-            </Section>
-
-            <Section title="My Experience" className="my-work">
-                <WorkContainter />
-            </Section>
-            <Section title="Contact" className="my-work">
-                <Contact />
-            </Section>
+                    <WorkCarousel />
+                </Section>
+            </div>
+            <div id="my-experience">
+                <Section title="My Experience" className="my-work">
+                    <WorkContainter />
+                </Section>
+            </div>
+            <div id="my-contact">
+                <Section title="Contact" className="my-work">
+                    <Contact />
+                </Section>
+            </div>
             <Footer />
 
 

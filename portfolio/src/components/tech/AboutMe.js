@@ -4,7 +4,7 @@ import AboutMeTextContainer from './AboutMeTextContainer'
 
 const About = () => {
   return (
-    <div name="About">
+    <div>
         <section className='about-section'>
             <AboutMeTextContainer />
         </section>
