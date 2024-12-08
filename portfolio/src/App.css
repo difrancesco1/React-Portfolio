@@ -1360,6 +1360,11 @@ ol, ul, menu {
   margin-top: .75rem;
 }
 
+.a-footer {
+  display: flex;
+  justify-content: center;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;

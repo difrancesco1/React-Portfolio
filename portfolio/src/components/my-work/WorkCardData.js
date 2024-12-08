@@ -5,7 +5,7 @@ import tailwind from '../../images/tailwindcss.png';
 import axios from '../../images/axios.png';
 import framer from '../../images/framer.png';
 import DecayTracker from '../../images/DecayTracker3.gif';
-import NewProjectMedia from '../../images/tempmedia.png'
+import NewProjectMedia from '../../images/tempmedia.png';
 import arrowUp from '../../images/arrow-up.png';
 import Krug from '../../images/Krug.png';
 import Python from '../../images/python.png';
@@ -27,10 +27,10 @@ const workCardsData = [
       { src: axios, alt: "Axios Logo" },
       { src: framer, alt: "Framer Motion Logo" },
     ],
-    liveSiteLink: "#", // Replace with the live site URL
-    arrowIcon: arrowUp, // Use the imported arrow icon
+    liveSiteLink: "https://github.com/difrancesco1/Decay-Tracker", // Replace with actual live site URL
+    arrowIcon: arrowUp,
     media: [
-      { src: DecayTracker, alt: "Decay Tracker Project Media" }, // Specific to Decay Tracker
+      { src: DecayTracker, alt: "Decay Tracker Project Media" },
     ],
   },
   {
@@ -50,10 +50,10 @@ const workCardsData = [
       { src: Python, alt: "Python Logo" },
       { src: framer, alt: "Framer Motion Logo" },
     ],
-    liveSiteLink: "#", // Replace with the live site URL
-    arrowIcon: arrowUp, // Use the imported arrow icon
+    liveSiteLink: "https://github.com/matthew2738/KruGG", // Replace with actual live site URL
+    arrowIcon: arrowUp,
     media: [
-      { src: NewProjectMedia, alt: "New KruGG Project Media" }, // Specific to KruGG
+      { src: NewProjectMedia, alt: "New KruGG Project Media" },
     ],
   },
 ];

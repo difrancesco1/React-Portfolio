@@ -12,16 +12,32 @@ const Footer = () => {
         <p className='footer-text'>Privacy Policy</p>
       </div>
       <div className='footer-middle'>
+        {/* LinkedIn Hyperlink */}
         <div className='footer-icon-container'>
-          <img src={linkedin} className='footer-icon'></img>
+          <a
+            className='a-footer'
+            href="https://www.linkedin.com/in/joshua-difrancesco-a28265183"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={linkedin} className='footer-icon' alt="LinkedIn" />
+          </a>
         </div>
+        {/* GitHub Hyperlink */}
         <div className='footer-icon-container'>
-          <img src={github} className='footer-icon'></img>
+          <a
+            className='a-footer'
+            href="https://github.com/difrancesco1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={github} className='footer-icon' alt="GitHub" />
+          </a>
         </div>
       </div>
       <p className='footer-right'>© 2024 Joshua DiFrancesco</p>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

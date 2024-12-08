@@ -46,11 +46,11 @@ function App() {
                     <WorkContainter />
                 </Section>
             </div>
-            <div id="my-contact">
+            {/* <div id="my-contact">
                 <Section title="Contact" className="my-work">
                     <Contact />
                 </Section>
-            </div>
+            </div> */}
             <Footer />
 
 

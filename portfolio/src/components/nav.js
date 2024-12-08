@@ -64,11 +64,11 @@ function NavBar() {
                                     <p className="nav-li-text-p">Experience</p>
                                 </a>
                             </li>
-                            <li className="nav-li">
+                            {/* <li className="nav-li">
                                 <a className="nav-li-a" href="#my-contact">
                                     <p className="nav-li-text-p">Contact</p>
                                 </a>
-                            </li>
+                            </li> */}
                             <li className="nav-li">
                                 <a
                                     className="nav-li-a nav-li-resume"
