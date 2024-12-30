@@ -44,6 +44,7 @@ body {
   right: 0;
   left: 0;
   position: fixed;
+  animation: 1s fadeInDown;
 }
 
 .header-inner {
@@ -301,6 +302,7 @@ ol, ul, menu {
   flex-basis: 58%;
   min-width: 58.3%;
   box-sizing: border-box;
+  animation: 1s fadeInLeft;
 }
 
 .hero-title {
@@ -498,6 +500,7 @@ ol, ul, menu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  animation: 1s fadeInRight;
 }
 
 

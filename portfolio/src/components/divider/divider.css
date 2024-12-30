@@ -4,7 +4,7 @@
       opacity: 1;
     }
     100% {
-      transform: translateY(400%) translateX(-50%) rotate(0deg); /* Complete rotation */
+      transform: translateY(400%) translateX(-50%) rotate(0deg);
       opacity: .2;
     }
   }
@@ -40,4 +40,3 @@
     background-color: rgb(254, 255, 255) !important;
     animation: wheel 1.6s infinite linear; /* Correct animation syntax */
   }
-  
