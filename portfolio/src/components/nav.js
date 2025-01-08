@@ -74,7 +74,7 @@ function NavBar() {
                                     className="nav-li-a nav-li-resume"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    href="/ResumeReact.pdf"
+                                    href="/SoftwareEngineerResume.pdf"
                                 >
                                     <p className="resume-text">Resume</p>
                                 </a>
